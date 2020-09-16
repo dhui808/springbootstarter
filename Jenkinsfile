@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools { 
-        maven 'Maven 3.6.3' 
+        maven 'Maven3.6.4' 
         jdk 'jdk8' 
     }
     stages {
@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo "PATH = ${PATH}"
                 echo "M2_HOME = ${M2_HOME}"
-				echo "JAVA_HOME = ${JAVA_HOME}"
+                echo "JAVA_HOME = ${JAVA_HOME}"
             }
         }
 
