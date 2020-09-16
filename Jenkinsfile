@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-			    cmd-exec('echo "Hello World!"')
+				cmd-exec('echo "Hello World!"')
                 bat 'run.bat'
             }
         }
