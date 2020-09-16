@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'maven:3.6.3' } }
+    agent { node { label 'windows' } }
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                bat 'echo "Hello World"'
             }
         }
     }
